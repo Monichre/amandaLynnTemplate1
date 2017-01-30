@@ -296,15 +296,9 @@ ul.normal-list {
 /*-------------------------------------- 2. Body --------------------------------------*/
 /*-------------------------------------- 2.1 Header --------------------------------------*/
 
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 30px 0 10px 0;
+#mobile-nav, #desktop-nav {
   height: 90px;
   background: #fff;
-  z-index: 110;
   transition: all 0.7s ease-in-out;
 
   @media (max-width: $xs) {
@@ -314,6 +308,7 @@ header {
 
   .logo {
     float: left;
+    display: none;
   }
 
   .logo-center {
@@ -338,7 +333,7 @@ header {
   }
 
   nav {
-    float: right;
+    float: left;
     vertical-align: middle;
     padding: 15px 0;
 
@@ -412,6 +407,34 @@ header {
     color: $brown;
   }
 }
+
+
+#desktop-nav {
+    @media (max-width: $sm) {
+      display: none;
+    }
+}
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 30px 0 10px 0;
+    z-index: 110;
+    display: none;
+    @media (max-width: $sm) {
+      display: block;
+    }
+
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 
 /*-------------------------------------- 2.2 Slider --------------------------------------*/
 #sliders {

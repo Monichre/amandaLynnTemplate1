@@ -18,16 +18,16 @@ $("#slider-animation-2").typed({
 });
 
 $(window).scroll(function(){
-    if( $(window).scrollTop() > 225){
-        $('.header_dynamic').removeClass('header_white').css({
-            'background-color': '#ffffff',
+    if( $(window).scrollTop() > 400){
+        $('#desktop-nav').removeClass('header_white').css({
+            'background-color': 'rgba(255, 255, 255, 0.7)',
             'color': '#333',
-            'opacity': .7
+
         });
         $('.logo').fadeIn(500);
-        $('.header_dynamic').addClass('fixed');
+        $('#desktop-nav').addClass('fixed');
     }else{
-        $('.header_dynamic').addClass('header_white').removeClass('fixed').css({
+        $('#desktop-nav').addClass('header_white').removeClass('fixed').css({
             'background-color': ''
         });
         $('.logo').fadeOut(500);
