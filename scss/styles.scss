@@ -1171,7 +1171,7 @@ footer {
     .close_btn {
       float: right;
       font-size: 42px;
-      
+
       a {
         text-decoration: none;
       }
@@ -2160,4 +2160,111 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+.most-recent-posts {
+
+    background-image: linear-gradient(to bottom, #ffffff, #f5f5f5);
+}
+
+.post-carousel {
+    margin: 0 auto 40px;
+
+    .img-bg {
+        margin: auto;
+        display: block;
+        width: max-content;
+
+        .inner {
+            height: 375px!important;
+            padding-top: 30px;
+            width: 500px;
+            display: block;
+            float: left;
+            background: url(../images/blog/blog_photo_1.jpg);
+            background-size: cover;
+
+            .content {
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 30px;
+
+                h1 {
+                    border: none!important;
+                    font-size: 30px;
+                }
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        display: inline-block;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+
+        .img-thumbnail {
+            // display: block;
+
+            img {
+                // float: left;
+
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .read-more {
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+    }
+
+
+    .owl-controls {
+        margin-top: 30px;
+    }
+    .owl-dots {
+      margin-top: 30px auto;
+      display: block;
+      text-align: center;
+
+      div {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .owl-dot {
+        height: 11px;
+        width: 11px;
+        background-color: $grey;
+        border-radius: 11px;
+
+        &:hover {
+          background-color: $black;
+        }
+      }
+      .owl-dot {
+        height: 11px;
+        width: 11px;
+        background-color: $grey;
+        border-radius: 11px;
+
+        &:hover {
+          background-color: $black;
+        }
+      }
+
+      .active {
+        background-color: $black;
+      }
+    }
+
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    height: 400px!important;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
 }

@@ -11,13 +11,20 @@
     <!-- OTHER CSS STYLES -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/elegant-font.css">
     <link rel="stylesheet" href="css/custom-icons.css">
     <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+
+
+
 
     <!-- THEME CSS STYLES -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -28,30 +35,59 @@
 </head>
 
 <body class="animsition no-padding full_height">
-<!-- OVERLAY NAVIGATION -->
-<div id="nav_overlay" class="menu_overlay">
+    <!-- OVERLAY NAVIGATION -->
+    <div id="nav_overlay" class="menu_overlay">
 
-    <div class="nav-overlay-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="menu close_btn">
-                        <a href="#">
-                            <span data-icon="&#x4d;"></span>
-                        </a>
+        <div class="nav-overlay-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="menu close_btn">
+                            <a href="#">
+                                <span data-icon="&#x4d;"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="nav-overlay-content">
+        <div class="nav-overlay-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="index.html" title="Start">Home</a></li>
+                                <li><a href="gallery-categories.html" title="Photos">Photos</a></li>
+                                <li><a href="blog.html" title="Blog">Blog</a></li>
+                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="about.html" title="About me">About me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- I deleted the footer code here -->
+
+    </div>
+    <!-- end OVERLAY NAVIGATION -->
+    <!-- HEADER -->
+    <header class="header_dynamic header_brown header_static_nav hidden-md-up">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
+                    <div class="logo"><a href="index.html" title="AJ">A - J</a></div>
+                    <div class="menu">
+                        <a href="#">
+                            <span data-icon="&#x61;"></span>
+                        </a>
+                    </div>
                     <nav>
                         <ul>
-                            <li class="active"><a href="index.html" title="Start">Home</a></li>
+                            <li class=""><a href="index.html" title="Start">Home</a></li>
                             <li><a href="gallery-categories.html" title="Photos">Photos</a></li>
                             <li><a href="blog.html" title="Blog">Blog</a></li>
                             <li><a href="contact.html" title="Contact">Contact</a></li>
@@ -61,272 +97,497 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
+    <!-- end HEADER -->
 
-    <footer class="menu_footer">
+    <!-- SLIDER -->
+    <section class="full_slider full_slider_skew" style="background-image: url('images/slider3.jpg')" data-rjs="2">
+        <div class="full_slider_bg_skew"></div>
+        <div class="full_slider_one full_slider_one_white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2><span id="slider-animation"></span></h2>
+                        <h1>I'm Amandalyn</h1>
+                        <p><span>Senior <span class="underline">Marketing Director</span></span> She Knows Media<br></p>
+                        <p class="p-2">check out my portfolio below</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEADER -->
+            <header class="header_dynamic header_brown header_static_nav hidden-sm-down">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="logo"><a href="index.html" title="AJ">A - J</a></div>
+                            <div class="menu">
+                                <a href="#">
+                                    <span data-icon="&#x61;"></span>
+                                </a>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li class=""><a href="index.html" title="Start">Home</a></li>
+                                    <li><a href="gallery-categories.html" title="Photos">Photos</a></li>
+                                    <li><a href="blog.html" title="Blog">Blog</a></li>
+                                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                                    <li><a href="about.html" title="About me">About me</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end HEADER -->
+
+            <!-- <div class="full_slider_arrow">
+            <a href="#"><span data-icon="&#x3b;"></span></a>
+        </div> -->
+        </div>
+
+    </section>
+    <!-- end SLIDER -->
+    <section class="most-recent-posts">
+        <div class="container">
+            <div class="row">
+                <h4>Recent Posts:</h4>
+                <div class="post-carousel">
+
+                    <!-- #1 Slide -->
+                    <div class="img-bg">
+                        <div class="inner">
+                            <div class="content">
+                                <h1>The 80 best Tumblr blogs for
+                                designers</h1>
+                                <a href="#" class="article-category" title="tutorials">tutorials</a>
+                                <ul class="article-info">
+                                    <li><span data-icon="&#xe023;"></span> 15/01/2016</li>
+                                    <li><span data-icon="&#x76;"></span> 15</li>
+                                    <li><span data-icon="&#xe106;"></span> 634</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/fashion1.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <br>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/category3.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <br>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/category3.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <div class="read-more">
+                            <a href="blog-post.html" class="btn-noborder" title="Read more">Read more</a>
+                        </div>
+
+                    </div>
+
+                    <!-- #2 Slide -->
+                    <div class="img-bg">
+                        <div class="inner">
+                            <div class="content">
+                                <h1>The 80 best Tumblr blogs for
+                                designers</h1>
+                                <a href="#" class="article-category" title="tutorials">tutorials</a>
+                                <ul class="article-info">
+                                    <li><span data-icon="&#xe023;"></span> 15/01/2016</li>
+                                    <li><span data-icon="&#x76;"></span> 15</li>
+                                    <li><span data-icon="&#xe106;"></span> 634</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/fashion1.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <br>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/category3.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <br>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/category3.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <div class="read-more">
+                            <a href="blog-post.html" class="btn-noborder" title="Read more">Read more</a>
+                        </div>
+
+                    </div>
+
+                    <!-- #3 Slide -->
+                    <div class="img-bg">
+                        <div class="inner">
+                            <div class="content">
+                                <h1>The 80 best Tumblr blogs for
+                                designers</h1>
+                                <a href="#" class="article-category" title="tutorials">tutorials</a>
+                                <ul class="article-info">
+                                    <li><span data-icon="&#xe023;"></span> 15/01/2016</li>
+                                    <li><span data-icon="&#x76;"></span> 15</li>
+                                    <li><span data-icon="&#xe106;"></span> 634</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/fashion1.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <br>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/category3.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <br>
+                        <div class="img-thumbnail">
+                            <img src="images/gallery/category3.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                        <div class="read-more">
+                            <a href="blog-post.html" class="btn-noborder" title="Read more">Read more</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION -->
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+
+                <!-- ARTICLE (left-image / right-content) -->
+                <article class="article-preview">
+
+                    <!-- IMAGE (left) -->
+                    <figure class="article-preview-left-image col-sm-6 col-xs-12">
+                        <div class="article-preview-left-image-content">
+                            <span class="article-preview-image-arrow"></span>
+                            <img src="images/blog/blog_photo_1.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                    </figure>
+                    <!-- end IMAGE -->
+
+                    <!-- ARTICLE CONTENT (right) -->
+                    <div class="article-preview-content col-sm-5 col-sm-offset-1 col-xs-12">
+                        <div class="article-preview-content-vertical-align">
+
+                            <h1><a href="#" title="The 80 best Tumblr blogs for designers">The 80 best Tumblr blogs for
+                            designers</a></h1>
+                            <a href="#" class="article-category" title="tutorials">tutorials</a>
+                            <ul class="article-info">
+                                <li><span data-icon="&#xe023;"></span> 15/01/2016</li>
+                                <li><span data-icon="&#x76;"></span> 15</li>
+                                <li><span data-icon="&#xe106;"></span> 634</li>
+                            </ul>
+
+                            <div class="article-text">
+                                <p>Whether you're a creative director on the hunt for new talent, or a dev looking for some web design inspiration, Tumblr is full of inspirational work. The micro blogging service and social network makes it mega-easy for
+                                    anyone wanting...</p>
+                            </div>
+
+                            <a href="blog-post.html" class="btn-noborder" title="Read more">Read more</a>
+
+                        </div>
+                    </div>
+                    <!-- end ARTICLE CONTENT -->
+                </article>
+                <!-- end ARTICLE (left-image / right-content) -->
+
+
+                <!-- ARTICLE (right-image / left-content) -->
+                <article class="article-preview">
+
+                    <!-- IMAGE (right) -->
+                    <figure class="article-preview-right-image col-sm-offset-1 col-sm-6 col-xs-12">
+                        <div class="article-preview-right-image-content">
+                            <span class="article-preview-image-arrow"></span>
+                            <img src="images/blog/blog_photo_2.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                    </figure>
+                    <!-- end IMAGE -->
+
+                    <!-- ARTICLE CONTENT (left) -->
+                    <div class="article-preview-content col-sm-5 col-xs-12">
+                        <div class="article-preview-content-vertical-align">
+
+                            <h1><a href="#" title="Photo of the Day: Queen Me!">Photo of the Day: Queen Me!</a></h1>
+                            <a href="#" class="article-category" title="photography">photography</a>
+                            <ul class="article-info">
+                                <li><span data-icon="&#xe023;"></span> 15/01/2016</li>
+                                <li><span data-icon="&#x76;"></span> 15</li>
+                                <li><span data-icon="&#xe106;"></span> 634</li>
+                            </ul>
+
+                            <div class="article-text">
+                                <p>This beauty photograph whispers softly to my eyes. The low saturation, the wonderfully soft light and the falling snow build the story of an ice princess awaiting her prince. The makeup, her frosted hair, white feathers
+                                    and fur show a depth of style...</p>
+                            </div>
+
+                            <a href="blog-post.html" class="btn-noborder" title="Read more">Read more</a>
+
+                        </div>
+                    </div>
+                    <!-- end ARTICLE CONTENT -->
+
+                </article>
+                <!-- end ARTICLE (left-image / right-content) -->
+                <!-- ARTICLE (left-image / right-content) -->
+                <article class="article-preview">
+
+                    <!-- IMAGE (left) -->
+                    <figure class="article-preview-left-image col-sm-6 col-xs-12">
+                        <div class="article-preview-left-image-content">
+                            <span class="article-preview-image-arrow"></span>
+                            <img src="images/blog/blog_photo_1.jpg" data-rjs="2" alt="Interior technique Article Photo">
+                        </div>
+                    </figure>
+                    <!-- end IMAGE -->
+
+                    <!-- ARTICLE CONTENT (right) -->
+                    <div class="article-preview-content col-sm-5 col-sm-offset-1 col-xs-12">
+                        <div class="article-preview-content-vertical-align">
+
+                            <h1><a href="#" title="The 80 best Tumblr blogs for designers">The 80 best Tumblr blogs for
+                            designers</a></h1>
+                            <a href="#" class="article-category" title="tutorials">tutorials</a>
+                            <ul class="article-info">
+                                <li><span data-icon="&#xe023;"></span> 15/01/2016</li>
+                                <li><span data-icon="&#x76;"></span> 15</li>
+                                <li><span data-icon="&#xe106;"></span> 634</li>
+                            </ul>
+
+                            <div class="article-text">
+                                <p>Whether you're a creative director on the hunt for new talent, or a dev looking for some web design inspiration, Tumblr is full of inspirational work. The micro blogging service and social network makes it mega-easy for
+                                    anyone wanting...</p>
+                            </div>
+
+                            <a href="blog-post.html" class="btn-noborder" title="Read more">Read more</a>
+
+                        </div>
+                    </div>
+                    <!-- end ARTICLE CONTENT -->
+                </article>
+                <!-- end ARTICLE (left-image / right-content) -->
+
+
+                <div class="more col-xs-12">
+                    <a class="animsition-link btn-normal" href="blog.html" title="Go Blog">Bloggin So Hard</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end SECTION -->
+
+
+
+
+    <!-- SECTION -->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+
+                <div class="my-gallery gallery-masonry">
+
+                    <div class="gallery-masonry-sizer"></div>
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry2@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry2.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry3@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry3.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry6@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry6.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry4@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry4.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry5@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry5.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item gallery-masonry-item--width2">
+                        <a href="images/gallery_masonry/photo_masonry7@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry7.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry8@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry8.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item">
+                        <a href="images/gallery_masonry/photo_masonry9@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry9.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery-thumb gallery-masonry-item gallery-masonry-item--width2">
+                        <a href="images/gallery_masonry/photo_masonry10@2x.jpg" title="Image">
+                            <img src="images/gallery_masonry/photo_masonry10.jpg" data-rjs="2" alt="Image description" />
+                            <div class="gallery-thumb-desc">
+                                <h4>Photo name</h4>
+                                <p>album</p>
+                            </div>
+                        </a>
+                    </figure>
+
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="more col-xs-12">
+                    <a class="animsition-link btn-normal" href="#" title="More">Smile Bitch</a>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+    <!-- end SECTION -->
+
+
+    <!-- SECTION -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="section-wrapper col-xs-12">
+
+                <div class="section-title">
+                    <h1>Connect</h1>
+                </div>
+
+                <!-- Newsletter Form -->
+                <form id="newsletter-form" action="#" method="get">
+                    <div class="row">
+                        <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+                            <input id="email" class="form-field" name="email" type="email" placeholder="Your Email">
+                        </div>
+                        <div class="more col-xs-12">
+                            <a class="animsition-link btn-normal btn-grey" href="#" title="Subscribe me">Stick With Me</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- end SECTION -->
+
+    <div class="clear"></div>
+
+    <!-- FOOTER -->
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
+                    <!-- Logo -->
+                    <div class="logo"><a href="index4.html" title="AJ">AJ</a></div>
+
+                    <!-- Social icons -->
+                    <div class="socials">
+                        <ul>
+                            <li><a href="#" title="Facebook"><span data-icon="&#xe093;"></span></a></li>
+                            <li><a href="#" title="Twitter"><span data-icon="&#xe094;"></span></a></li>
+                            <li><a href="#" title="Instagram"><span data-icon="&#xe09a;"></span></a></li>
+                            <li><a href="#" title="Flickr"><span data-icon="&#xe0a6;"></span></a></li>
+                            <li><a href="#" title="LinkedIn"><span data-icon="&#xe09d;"></span></a></li>
+                            <li><a href="#" title="Pinterest"><span data-icon="&#xe095;"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact details -->
+                    <!-- <address class="footer-contact">
+                    <p>+1 808-008-0008, amandalynn@fakeemail.com</p>
+                    <p>4678 poopy butt, 90001 Los Angeles</p>
+                </address> -->
 
                     <!-- Copyright informations -->
                     <div class="copyright">
-                        <!-- <p>Made by <a href="https://themeforest.net/user/prestahome" title="PrestaHome">PrestaHome</a> . All rights reserved
-                            2016
-                        </p> -->
+                        <p>Aestheke Inc</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-</div>
-<!-- end OVERLAY NAVIGATION -->
-
-<!-- HEADER -->
-<header class="header_dynamic header_brown header_static_nav">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="logo"><a href="index.html" title="Best">AJ</a></div>
-                <div class="menu">
-                        <a href="#">
-                            <span data-icon="&#x61;"></span>
-                        </a>
-                    </div>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="index.html" title="Start">Home</a></li>
-                        <li><a href="gallery-categories.html" title="Photos">Photos</a></li>
-                        <li><a href="blog.html" title="Blog">Blog</a></li>
-                        <li><a href="contact.html" title="Contact">Contact</a></li>
-                        <li><a href="about.html" title="About me">About me</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- end HEADER -->
+    <!-- end FOOTER -->
 
 
-<!-- SLIDER -->
-
-<section class="full_slider full_slider_skew" style="background-image: url('images/slider3.jpg')" data-rjs="2">
-    <div class="full_slider_bg_skew"></div>
-    <div class="full_slider_one full_slider_one_white">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2><span id="slider-animation">Hello!</span></h2>
-                    <h1>I'm Amanda Lynn</h1>
-                    <p><span>Senior <span class="underline">Marketing Director</span></span> She Knows Media<br>check
-                        out my portfolio below</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- end SLIDER -->
-
-<!-- SECTION -->
-<section class="gallery">
-    <div class="container">
-        <div class="row">
-
-            <div class="my-gallery gallery-masonry">
-
-                <div class="gallery-masonry-sizer"></div>
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry2@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry2.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry3@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry3.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry6@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry6.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
+    <!-- JAVASCRIPT PLUGINS -->
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/animsition.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
 
 
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry4@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry4.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry5@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry5.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item gallery-masonry-item--width2">
-                    <a href="images/gallery_masonry/photo_masonry7@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry7.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry8@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry8.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item">
-                    <a href="images/gallery_masonry/photo_masonry9@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry9.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-                <figure class="gallery-thumb gallery-masonry-item gallery-masonry-item--width2">
-                    <a href="images/gallery_masonry/photo_masonry10@2x.jpg" title="Image">
-                        <img src="images/gallery_masonry/photo_masonry10.jpg" data-rjs="2" alt="Image description"/>
-                        <div class="gallery-thumb-desc">
-                            <h4>Photo name</h4>
-                            <p>album</p>
-                        </div>
-                    </a>
-                </figure>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="more col-xs-12">
-                <a class="animsition-link btn-normal" href="index.html" title="More">More</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- end SECTION -->
 
 
-<!-- SECTION -->
-<section class="newsletter">
-    <div class="container">
-        <div class="section-wrapper col-xs-12">
-
-            <div class="section-title">
-                <h1>Connect</h1>
-            </div>
-
-            <!-- Newsletter Form -->
-            <form id="newsletter-form" action="#" method="get">
-                <div class="row">
-                    <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
-                        <input id="email" class="form-field" name="email" type="email" placeholder="Your Email">
-                    </div>
-                    <div class="more col-xs-12">
-                        <a class="animsition-link btn-normal btn-grey" href="#" title="Subscribe me">Stick With Me</a>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-    </div>
-</section>
-<!-- end SECTION -->
-
-<div class="clear"></div>
-
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <!-- Logo -->
-                <div class="logo"><a href="index4.html" title="AJ">AJ</a></div>
-
-                <!-- Social icons -->
-                <div class="socials">
-                    <ul>
-                        <li><a href="#" title="Facebook"><span data-icon="&#xe093;"></span></a></li>
-                        <li><a href="#" title="Twitter"><span data-icon="&#xe094;"></span></a></li>
-                        <li><a href="#" title="Instagram"><span data-icon="&#xe09a;"></span></a></li>
-                        <li><a href="#" title="Flickr"><span data-icon="&#xe0a6;"></span></a></li>
-                        <li><a href="#" title="LinkedIn"><span data-icon="&#xe09d;"></span></a></li>
-                        <li><a href="#" title="Pinterest"><span data-icon="&#xe095;"></span></a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact details -->
-                <address class="footer-contact">
-                    <p>+1 808-008-0008, amandalynn@fakeemail.com</p>
-                    <p>4678 poopy butt, 90001 Los Angeles</p>
-                </address>
-
-                <!-- Copyright informations -->
-                <div class="copyright">
-                    <p>Aestheke Inc</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- end FOOTER -->
-
-
-<!-- JAVASCRIPT PLUGINS -->
-<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="js/typed.js"></script>
-<script type="text/javascript" src="js/animsition.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="js/retina.min.js"></script>
-
-<!-- THEME JAVASCRIPT -->
-<script type="text/javascript" src="js/main.js"></script>
+    <!-- THEME JAVASCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
