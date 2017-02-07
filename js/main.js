@@ -19,15 +19,15 @@ $("#slider-animation-2").typed({
 
 $(window).scroll(function(){
     if( $(window).scrollTop() > 400){
-        $('#desktop-nav').removeClass('header_white').css({
+        $('#mobile-nav').removeClass('header_white').css({
             'background-color': 'rgba(255, 255, 255, 0.7)',
             'color': '#333',
 
         });
         $('.logo').fadeIn(500);
-        $('#desktop-nav').addClass('fixed');
+        $('#mobile-nav').addClass('fixed');
     }else{
-        $('#desktop-nav').addClass('header_white').removeClass('fixed').css({
+        $('#mobile-nav').addClass('header_white').removeClass('fixed').css({
             'background-color': ''
         });
         $('.logo').fadeOut(500);

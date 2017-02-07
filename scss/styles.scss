@@ -298,7 +298,7 @@ ul.normal-list {
 
 #mobile-nav, #desktop-nav {
   height: 90px;
-  background: #fff;
+  // background: #fff;
   transition: all 0.7s ease-in-out;
 
   @media (max-width: $xs) {
@@ -307,8 +307,10 @@ ul.normal-list {
   }
 
   .logo {
-    float: left;
+    // float: left;
     display: none;
+    text-align: center;
+    margin: auto;
   }
 
   .logo-center {
@@ -333,7 +335,7 @@ ul.normal-list {
   }
 
   nav {
-    float: left;
+    // float: left;
     vertical-align: middle;
     padding: 15px 0;
 
@@ -421,7 +423,7 @@ ul.normal-list {
     left: 0;
     padding: 30px 0 10px 0;
     z-index: 110;
-    display: none;
+    // display: none;
     @media (max-width: $sm) {
       display: block;
     }
@@ -442,22 +444,22 @@ ul.normal-list {
 }
 
 .one-slider, .full_slider_one {
-  margin: 100px 0;
+  // margin: 100px 0;
 
   @media (min-width: $md) and (max-width: 1280px) {
-    margin: 90px 0;
+    // margin: 90px 0;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    margin: 70px 0;
+    // margin: 70px 0;
   }
 
   @media (max-width: $xs) {
-    margin: 30px 0 60px;
+    // margin: 30px 0 60px;
   }
 
   @media (max-width: 320px) {
-    margin: 15px 0 30px;
+    // margin: 15px 0 30px;
   }
 
   h1, h2 {
@@ -629,7 +631,7 @@ ul.normal-list {
 
 .full_slider_skew {
   height: 500px;
-  margin-bottom: 70px;
+  // margin-bottom: 70px;
 
   @media (max-width: $sm) {
     height: 400px;
@@ -2290,4 +2292,28 @@ footer {
     height: 400px!important;
     overflow: hidden;
     -webkit-transform: translate3d(0,0,0);
+}
+.social-nav-container {
+    margin: auto;
+    display: block;
+    text-align: center;
+
+    nav {
+        display: block;
+        margin: auto;
+    }
+
+    .social-nav {
+        list-style-type: none;
+        display: block;
+        margin: auto;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: auto;
+            text-align: center;
+       }
+
+    }
 }
