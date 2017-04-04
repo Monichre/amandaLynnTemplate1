@@ -3,14 +3,14 @@
 retinajs();
 
 $("#slider-animation").typed({
-    strings: ["Hey", "Hi", "Heyy", "Hi tho", "Sup"],
+    strings: ["Fashion", "Design", "New York", "Travel"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true
 });
 $("#slider-animation-2").typed({
-    strings: ["Fashion", "Photography", "Lifestyle", "Marketing", "Writing", "Food", "Wine!"],
+    strings: ["Fashion", "Design", "New York", "Travel"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
@@ -67,6 +67,7 @@ $(document).ready(function(){
 
     $(".post-carousel").owlCarousel({
         loop:true,
+        autoplay: true,
         margin:10,
         nav:true,
         navText: ['', ''],

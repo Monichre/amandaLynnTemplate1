@@ -19,6 +19,7 @@
 
     <!-- THEME CSS STYLES -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -30,7 +31,7 @@
 
 <body class="animsition">
 <!-- OVERLAY NAVIGATION -->
-<div id="nav_overlay" class="menu_overlay">
+<!-- <div id="nav_overlay" class="menu_overlay">
 
     <div class="nav-overlay-header">
         <div class="container">
@@ -76,25 +77,53 @@
         </div>
     </footer>
 
-</div>
+</div> -->
 <!-- end OVERLAY NAVIGATION -->
 
 
 <!-- HEADER -->
-<header>
+<!-- HEADER NAV-->
+<header id="mobile-nav" class="header_dynamic header_brown header_static_nav mobile-hide">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="logo"><a href="index.html" title="Best">AJ</a></div>
+            <div class="col-xs-3 social-nav-container">
+                <nav>
+                    <ul class="social-nav">
+                        <li class="">
+                            <span class="icon icon-facebook"></span>
+                        </li>
+                        <li class="">
+                            <span class="icon icon-twitter"></span>
+                        </li>
+                        <li class="">
+                            <span class="icon icon-dribbble"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-6 mobile-nav-main">
+                <nav>
+                    <ul>
+                        <li class=""><a href="index.html" title="Start">Home</a></li>
+                        <li><a href="gallery-categories.html" title="Photos">Photos</a></li>
+                        <li><a href="blog.html" title="Blog">Blog</a></li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                        <li><a href="about.html" title="About me">About me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-3">
+                <div class="logo"><a href="index.html" title="AJ">H+R</a></div>
                 <div class="menu">
-                        <a href="#">
-                            <span data-icon="&#x61;"></span>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <span data-icon="&#x61;"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </header>
+
 <!-- end HEADER -->
 
 
@@ -106,7 +135,9 @@
             <div class="section-title">
               <h2><span id="slider-animation-2"></span></h2>
               <hr class="small-line">
-              <h1>Amandalynn <strong>Jones</strong></h1>
+              <img id="profile" src="images/profile.jpg" data-rjs="2" alt="Amandalynn Jones">
+              <hr class="small-line">
+              <h1>Amandalyn <strong>Jones</strong></h1>
 
 
             </div>
@@ -120,173 +151,12 @@
                     culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
                     error sit voluptatem accusantium doloremque laudantium.
                 </p>
-
-                <img src="images/amanda.jpg" data-rjs="2" alt="Amandalynn Jones">
             </div>
 
         </div>
     </div>
 </section>
 <!-- end MY NAME IS -->
-
-<!-- I CAN -->
-<section class="ican">
-    <div class="container">
-        <div class="row">
-
-            <div class="section-title">
-                <h1>Skills</h1>
-            </div>
-
-            <ul class="ican-nav col-xs-12">
-                <li>
-                    <a href="#" title="Portraits">
-                        <span class="icon-male-user"></span>
-                        <h2>Marketing</h2>
-                    </a>
-                </li>
-                <li class="active" title="Photo Session">
-                    <a href="#">
-                        <span class="icon-photo"></span>
-                        <h2>Photography</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Retouch">
-                        <span class="icon-note"></span>
-                        <h2>Design</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Albums">
-                        <span class="icon-opened-book"></span>
-                        <h2>Writing</h2>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="ican-content col-sm-offset-1 col-sm-10 col-xs-12">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                </p>
-                <img src="images/ican-portraits.jpg" data-rjs="2" alt="Portrait">
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- end I CAN -->
-
-
-<!-- WHAT CLIENTS SAY -->
-<div class="cv-opinion">
-    <div class="container">
-        <div class="row">
-
-            <section class="cv col-sm-6 col-xs-12">
-                <div>
-                    <img src="images/my-cv.jpg" data-rjs="2" alt="Cv">
-                </div>
-                <h2>My<span>CV</span></h2>
-                <a class="animsition-link btn-normal" href="#" title="Download CV">Download</a>
-            </section>
-
-            <section class="col-sm-6 col-xs-12">
-                <div class="opinion">
-                    <div class="section-title">
-                        <h1 class="section-title">What my clients say</h1>
-                    </div>
-                    <div class="opinions">
-                        <blockquote>
-                            <p><span class="addition">“L</span>orem ipsum dolor sit amet, consectetur adipisicing
-                                elit,
-                                sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute
-                                irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur."
-                                <span class="author">- Cristiano Ronaldo</span></p>
-                        </blockquote>
-                        <blockquote>
-                            <p><span class="addition">“L</span>orem ipsum dolor sit amet, consectetur adipisicing
-                                elit,
-                                sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute
-                                irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur."
-                                <span class="author">- Cristiano Ronaldo</span></p>
-                        </blockquote>
-                        <blockquote>
-                            <p><span class="addition">“L</span>orem ipsum dolor sit amet, consectetur adipisicing
-                                elit,
-                                sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute
-                                irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur."
-                                <span class="author">- Cristiano Ronaldo</span></p>
-                        </blockquote>
-                    </div>
-                </div>
-
-            </section>
-
-        </div>
-    </div>
-</div>
-<!-- end WHAT CLIENTS SAY -->
-
-<!-- SOCIALS -->
-<section class="socials">
-    <div class="container">
-
-        <div class="section-title">
-            <h1>Socials</h1>
-        </div>
-
-        <ul class="row">
-            <li class="col-md-3 col-xs-6">
-                <span class="icon icon-facebook"></span>
-                <div>
-                    <p class="nickname"><a href="#" title="Facebook Profile best.09">best.09</a></p>
-                    <p class="social-type">Facebook</p>
-                    <a href="#"><span data-icon="&#xe106;"></span> Like me!</a>
-                </div>
-            </li>
-            <li class="col-md-3 col-xs-6">
-                <span class="icon icon-twitter"></span>
-                <div>
-                    <p class="nickname"><a href="#" title="Twitter Profile best.09">mylogin</a></p>
-                    <p class="social-type">Twitter</p>
-                    <a href="#"><span class="icon-twitter"></span> Tweet it!</a>
-                </div>
-            </li>
-            <li class="col-md-3 col-xs-6">
-                <span class="icon icon-dribbble"></span>
-                <div>
-                    <p class="nickname"><a href="#" title="Dribbble Profile best.09">best009</a></p>
-                    <p class="social-type">Dribbble</p>
-                    <a href="#"><span data-icon="&#x24;"></span> Follow me!</a>
-                </div>
-            </li>
-            <li class="col-md-3 col-xs-6">
-                <span class="icon icon-youtube"></span>
-                <div>
-                    <p class="nickname"><a href="#" title="Youtube Profile best.09">mylogin</a></p>
-                    <p class="social-type">Youtube</p>
-                    <a href="#"><span data-icon="&#x24;"></span> Subscribe!</a>
-                </div>
-            </li>
-        </ul>
-
-    </div>
-</section>
-<!-- end SOCIALS -->
-
 
 <!-- SECTION -->
 <section class="newsletter">
@@ -314,9 +184,7 @@
 </section>
 <!-- end SECTION -->
 
-<div class="clear">
-
-</div>
+<div class="clear"></div>
 
 
 <!-- FOOTER -->
@@ -340,16 +208,7 @@
                     </ul>
                 </div>
 
-                <!-- Contact details -->
-                <address class="footer-contact">
-                    <p>+1 808-008-0008, amandalynn@fakeemail.com</p>
-                    <p>4678 poopy butt, 90001 Los Angeles</p>
-                </address>
-
-                <!-- Copyright informations -->
-                <div class="copyright">
-                    <p>Aestheke Inc</p>
-                </div>
+        
             </div>
         </div>
     </div>
